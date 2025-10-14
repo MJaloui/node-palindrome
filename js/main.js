@@ -4,7 +4,7 @@ function runPalindrome() {
 
   const palResult = document.querySelector("#word").value;
 
-  const url = `http://localhost:8000/truePalindrome?q=${palResult}`;
+  const url = `/truePalindrome?q=${palResult}`;
 
   fetch(url)
     .then(response => response.text())
